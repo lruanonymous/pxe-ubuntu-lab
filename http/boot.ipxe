@@ -1,0 +1,11 @@
+#!ipxe
+dhcp
+
+set base http://192.168.1.1:8080/ubuntu
+
+echo Booting Ubuntu Installer...
+
+kernel ${base}/vmlinuz ip=dhcp url=${base}/ubuntu.iso ---
+initrd ${base}/initrd
+
+boot

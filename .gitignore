@@ -1,0 +1,5 @@
+.DS_Store
+*.iso
+vmlinuz
+initrd
+*.log
